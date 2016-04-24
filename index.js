@@ -14,5 +14,5 @@ app.get('/webhook/', function (req, res) {
 
 app.set('port',(process.env.PORT || 5000));
 app.listen(app.get('port'),function() {
-	console.console.log('running port' + app.get('port'));
+	console.log('running port' + app.get('port'));
 })
