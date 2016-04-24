@@ -6,10 +6,10 @@ app.get('/', function (req, res) {
 });
 
 app.get('/webhook/', function (req, res) {
-  if (req.query['hub.verify_token'] === '<saturn>') {
+  if (req.query['hub.verify_token'] === 'saturn') {
     res.send(req.query['hub.challenge']);
   }
-  res.send('Error, wrong validation token');
+  res.send('Error, wrong validation token ');
 })
 
 app.set('port',(process.env.PORT || 5000));
